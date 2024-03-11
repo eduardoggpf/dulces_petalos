@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
   return (
-    <div>
-      <h1>Header test</h1>
+    <div class="App-header">
+      <h1>Dulces pétalos</h1>
     </div>
   );
 }

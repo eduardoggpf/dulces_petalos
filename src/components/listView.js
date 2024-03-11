@@ -18,7 +18,7 @@ function ListView() {
 
   return (
     <div className="grid-container">
-      <input type="text" placeholder="Search by name" onChange={e => setSearchTerm(e.target.value)} />
+      <input type="text" class="search-bar" placeholder="Busca por nombre" onChange={e => setSearchTerm(e.target.value)} />
       {/* Esto es como el ngFor de angular*/}
       <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
         {filteredData.map((item, id) => (
