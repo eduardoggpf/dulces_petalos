@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Grid from '@material-ui/core/Grid';
-import '../App.css';
+import '../ui/listView.css';
 //import "@/app/src/ui/listView.css";
 
 function ListView() {
