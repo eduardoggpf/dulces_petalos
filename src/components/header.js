@@ -1,11 +1,16 @@
 import React from 'react';
+import '../ui/header.css';
 
 function Header() {
-  return (
-    <div class="App-header">
-      <h1>Dulces pétalos</h1>
-    </div>
-  );
+    const handleHeaderClick = () => {
+        return window.location.href = "/";
+    };
+
+    return (
+        <div class="App-header">
+        <h1 onClick={handleHeaderClick}>Dulces pétalos</h1>
+        </div>
+    );
 }
 
 export default Header;

@@ -1,12 +1,10 @@
-import Header from './components/header';
-import ListView from './components/listView';
 import './App.css';
+import AppRoutes from './appRoutes';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <ListView></ListView>
+      <AppRoutes/>
     </div>
   );
 }
