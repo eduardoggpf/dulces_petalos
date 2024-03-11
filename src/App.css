@@ -27,3 +27,16 @@
 .App-link {
   color: #61dafb;
 }
+
+text{
+  color: rgba(0, 0, 0, 0.425);
+}
+
+p{
+  color: rgba(0, 0, 0, 0.425);
+  margin : 2px;
+}
+
+h3{
+  margin : 5px
+}

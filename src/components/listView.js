@@ -14,7 +14,7 @@ function ListView() {
       .catch(error => console.error(error));
   }, []);
 
-  const filteredData = data.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredData = data.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase())||item.binomialName.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
     <div className="grid-container">
@@ -24,8 +24,12 @@ function ListView() {
         {filteredData.map((item, id) => (
             <Grid item xs={6} md={3} sm={4} spacing={2}>
                 <th className="grid-item" key={item.id}>
-                <h3>{item.name}</h3>
+                <section>
+                    <h3>{item.name}</h3>
+                    <p>{item.binomialName}</p>
+                </section>
                 <img src={item.imgUrl} class="grid-img"/>
+                <p>{item.price + "€"}</p>
                 </th>
             </Grid>
         ))}
