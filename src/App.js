@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Header from './components/header';
 import ListView from './components/listView';
 import './App.css';
@@ -9,7 +8,6 @@ function App() {
       <Header></Header>
       <ListView></ListView>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

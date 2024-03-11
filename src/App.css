@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.grid-img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
