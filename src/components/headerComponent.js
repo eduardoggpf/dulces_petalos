@@ -1,7 +1,7 @@
 import React from 'react';
-import '../ui/header.css';
+import '../ui/headerComponent.css';
 
-function Header() {
+function HeaderComponent() {
     const handleHeaderClick = () => {
         return window.location.href = "/";
     };
@@ -13,4 +13,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default HeaderComponent;

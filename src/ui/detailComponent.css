@@ -1,0 +1,27 @@
+.detailTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detailImg{
+    width: 90%;
+    height: 90%;
+    padding: 10%;
+    object-fit: cover;
+}
+
+.backButton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    width: 100px;
+    position: relative;
+    left: 90%;
+}

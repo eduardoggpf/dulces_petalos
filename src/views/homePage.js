@@ -1,11 +1,11 @@
-import Header from '../components/header';
-import ListView from '../components/listView';
+import HeaderComponent from '../components/headerComponent';
+import ListComponent from '../components/listComponent';
 
 function Home() {
   return (
     <div className="Home">
-      <Header></Header>
-      <ListView></ListView>
+      <HeaderComponent></HeaderComponent>
+      <ListComponent></ListComponent>
     </div>
   );
 }

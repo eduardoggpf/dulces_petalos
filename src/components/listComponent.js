@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Grid from '@material-ui/core/Grid';
-import '../ui/listView.css';
+import '../ui/listComponent.css';
 
-function ListView() {
+function ListComponent() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-
-    /**/
 
     useEffect(() => {
         fetch('https://dulces-petalos.herokuapp.com/api/product')
@@ -39,4 +37,4 @@ function ListView() {
     );
 }
 
-export default ListView;
+export default ListComponent;
