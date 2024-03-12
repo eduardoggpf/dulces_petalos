@@ -5,8 +5,7 @@ function Detail(item) {
   return (
     <div className="Home">
       <HeaderComponent></HeaderComponent>
-      <h3>Detalle del producto</h3>
-      <DetailComponent id={item}></DetailComponent>
+      <DetailComponent></DetailComponent>
     </div>
   );
 }
