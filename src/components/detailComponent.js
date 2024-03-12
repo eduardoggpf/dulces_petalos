@@ -6,10 +6,6 @@ import { Button } from '@material-ui/core';
 const DetailComponent = () => {
     const [data, setData] = useState([]);
     const {id} = useParams();
-    
-    const handleBackClick = () => {
-        return window.location.href = "/";
-    };
 
     useEffect(() => {
         fetch('https://dulces-petalos.herokuapp.com/api/product/' + id)
@@ -18,7 +14,6 @@ const DetailComponent = () => {
         .catch(error => console.error(error));
     }, []);
 
-    console.log(data);
     if(data != null && data != undefined){
         return (
             <table class="detailTable">

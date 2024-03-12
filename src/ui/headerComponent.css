@@ -1,5 +1,7 @@
 h1{
+    display: relative;
     cursor: pointer;
+    position: relative;
 }
 
 .App-header {
@@ -9,4 +11,18 @@ h1{
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-  }
+}
+
+.breadCrumb{
+    position: bottom;
+    margin-right: 0px;
+}
+
+.breadcrumbText{
+    color: white;
+    cursor: pointer;
+}
+
+.breadcrumbTextSecondary{
+    color: rgba(255, 255, 255, 0.486);
+}
