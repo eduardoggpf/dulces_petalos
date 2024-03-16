@@ -27,7 +27,7 @@ function ListComponent() {
                         <h3>{item.name}</h3>
                         <p>{item.binomialName}</p>
                     </section>
-                    <img src={item.imgUrl} class="grid-img" onClick={() => window.location.href = "/product/" + item.id}/>
+                    <img src={item.imgUrl} alt={item.name + ' Image'} class="grid-img" onClick={() => window.location.href = "/product/" + item.id}/>
                     <p>{item.price + "€"}</p>
                     </th>
                 </Grid>

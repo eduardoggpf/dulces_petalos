@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-import { useParams } from 'react-router-dom';
 import '../ui/headerComponent.css';
 
-function HeaderComponent() {
-    const [data, setData] = useState([]);
-    const {id} = useParams();
-
-    useEffect(() => {
-        fetch('https://dulces-petalos.herokuapp.com/api/product/' + id)
-        .then(response => response.json())
-        .then(data => setData(data))
-        .catch(error => console.error(error));
-    }, []);
+function HeaderComponent(name) {
 
     const handleHeaderClick = () => {
         return window.location.href = "/";
@@ -31,7 +21,7 @@ function HeaderComponent() {
                         <Link underline="hover" href="/">
                             <text class="breadcrumbText"> Home</text>
                         </Link>
-                        <text class="breadcrumbTextSecondary">{(data?.name? data.name : "")}</text>
+                        <text class="breadcrumbTextSecondary">{(name?.flower? name.flower : "")}</text>
                     </Breadcrumbs>
                 </div>
             </tr>

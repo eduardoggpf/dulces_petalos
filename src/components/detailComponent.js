@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
 import '../ui/detailComponent.css';
 import { Button } from '@material-ui/core';
 
-const DetailComponent = () => {
-    const [data, setData] = useState([]);
-    const {id} = useParams();
+const DetailComponent = (flower) => {
+    const data = flower.flower;
 
-    useEffect(() => {
-        fetch('https://dulces-petalos.herokuapp.com/api/product/' + id)
-        .then(response => response.json())
-        .then(data => setData(data))
-        .catch(error => console.error(error));
-    }, []);
-
-    if(data != null && data != undefined){
+    if(data != null && data !== undefined && Object.values(data).length !== 0){
         return (
             <table class="detailTable">
                 <tr>
@@ -22,7 +13,7 @@ const DetailComponent = () => {
                 </tr>
                 <tr>
                     <td>
-                    <img class="detailImg" src={data.imgUrl}/>
+                    <img class="detailImg" src={data.imgUrl} alt='Flower Image'/>
                     </td>
                     <td>
                         <h2>{data.name}</h2>
